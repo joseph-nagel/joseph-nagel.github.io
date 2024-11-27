@@ -36,6 +36,7 @@ social-network-links:
 # theme: beautiful-jekyll-theme
 remote_theme: daattali/beautiful-jekyll
 plugins:
+  - jekyll-feed
   - jekyll-remote-theme
 
 # Exclude from processing.

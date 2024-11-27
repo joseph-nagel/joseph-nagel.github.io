@@ -26,3 +26,8 @@ This is the repository of my personal website made with [GitHub Pages](https://d
     bundle exec jekyll serve --livereload
     ```
 
+- Update gems from `Gemfile`:
+    ```
+    bundle update
+    ```
+
