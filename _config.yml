@@ -32,12 +32,21 @@ social-network-links:
   email: "JosephBNagel@gmail.com"
   github: joseph-nagel
 
+# Short description
+description: This website may contain traces of machine learning, neural networks, computer vision, generative AI and Bayesian inference among the trivia and irony.
+
 # Build settings
 # theme: beautiful-jekyll-theme
 remote_theme: daattali/beautiful-jekyll
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+
+# Links in the navigation bar
+navbar-links:
+  Welcome: "/"
+  ML Projects: "projects"
+  # About Me: "about"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
