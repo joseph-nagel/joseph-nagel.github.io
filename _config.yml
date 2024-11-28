@@ -33,7 +33,7 @@ social-network-links:
   github: joseph-nagel
 
 # Short description
-description: This website may contain traces of machine learning, neural networks, computer vision, generative AI and Bayesian inference among the trivia and irony.
+description: This website contains projects related to machine learning, neural networks, computer vision, generative AI and Bayesian inference.
 
 # Build settings
 # theme: beautiful-jekyll-theme
@@ -44,7 +44,8 @@ plugins:
 
 # Links in the navigation bar
 navbar-links:
-  Welcome: "/"
+  Home: "/"
+  Blog: "blog"
   ML Projects: "projects"
   # About Me: "about"
 
@@ -67,3 +68,4 @@ navbar-links:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
