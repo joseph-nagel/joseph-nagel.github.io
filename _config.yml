@@ -19,17 +19,17 @@
 # in the templates via {{ site.myvariable }}.
 
 # Website name at top left
-title: "Joseph Nagel"
+title: Joseph Nagel
 
 # Author name in the footer
-author: "Joseph Nagel"
+author: Joseph Nagel
 
 # Avatar picture at the top
-avatar: "/assets/images/Small.png"
+avatar: /assets/images/Small.png
 
 # Social media links at the bottom
 social-network-links:
-  email: "JosephBNagel@gmail.com"
+  email: JosephBNagel@gmail.com
   github: joseph-nagel
 
 # Short description
@@ -44,10 +44,14 @@ plugins:
 
 # Links in the navigation bar
 navbar-links:
-  Home: "/"
-  Blog: "blog"
-  ML Projects: "projects"
-  # About Me: "about"
+  Home: /
+  Blog: /blog/
+  ML Projects: /projects/
+  # About Me: /about/
+
+# Include items
+include:
+  - _pages
 
 # Exclude from processing.
 # The following items will not be processed, by default.
