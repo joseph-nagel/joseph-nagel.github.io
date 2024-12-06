@@ -46,6 +46,8 @@ plugins:
 navbar-links:
   Home: /
   Blog: /blog/
+  # ML Intros:
+  #   - Adversarial ML: /2024/12/06/adversarial-ml.html
   ML Projects: /projects/
   # About Me: /about/
 
