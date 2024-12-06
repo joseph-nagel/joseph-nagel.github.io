@@ -47,6 +47,7 @@ navbar-links:
   Home: /
   # Blog: /blog/
   ML Intros:
+    - Contrastive learning: /2024/12/07/contrastive-learning.html
     - Adversarial ML: /2024/12/06/adversarial-ml.html
   ML Projects: /projects/
   # About Me: /about/
