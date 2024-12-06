@@ -11,9 +11,3 @@ This is becoming my personal website.
 I may post on machine learning and other things.
 Everything is work in progress.
 
-
-<!-- ## Overview
-
-- [Blog](/blog/)
-- [ML Projects](/projects/) -->
-
