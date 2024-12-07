@@ -8,7 +8,7 @@ gh-repo: joseph-nagel/contrastive-learning
 gh-badge: [star, fork, follow]
 ---
 
-This <s>notebook</s> blog post provides an overly brief introduction to **contrastive representation learning**. In particular, we restrict the discussion to the **contrastive loss** [[Hadsell et al., 2006](https://doi.org/10.1109/CVPR.2006.100)] and the **triplet loss** [[Schroff et al., 2015](https://arxiv.org/abs/1503.03832)]. A more comprehensive review can be found in [[Le-Khac et al., 2020](https://doi.org/10.1109/ACCESS.2020.3031549)]. A common field of application is the problem of **face recognition** [[Wang and Deng, 2018](https://arxiv.org/abs/1804.06655), [Guo and Zhang, 2019](https://doi.org/10.1016/j.cviu.2019.102805)].
+This blog post provides an overly brief introduction to **contrastive representation learning**. In particular, we restrict the discussion to the **contrastive loss** [[Hadsell et al., 2006](https://doi.org/10.1109/CVPR.2006.100)] and the **triplet loss** [[Schroff et al., 2015](https://arxiv.org/abs/1503.03832)]. A more comprehensive review can be found in [[Le-Khac et al., 2020](https://doi.org/10.1109/ACCESS.2020.3031549)]. A common field of application is the problem of **face recognition** [[Wang and Deng, 2018](https://arxiv.org/abs/1804.06655), [Guo and Zhang, 2019](https://doi.org/10.1016/j.cviu.2019.102805)].
 
 
 ## Contrastive loss
