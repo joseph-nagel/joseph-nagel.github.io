@@ -3,7 +3,7 @@ layout: post
 title: Adversarial ML
 mathjax: true
 tags: [Introduction, Adversarial ML, Adversarial attacks]
-thumbnail-img: https://raw.githubusercontent.com/joseph-nagel/adversarial-ml/refs/heads/main/assets/attacked.png
+thumbnail-img: https://raw.githubusercontent.com/joseph-nagel/adversarial-ml/main/assets/attacked.png
 gh-repo: joseph-nagel/adversarial-ml
 gh-badge: [star, fork, follow]
 ---

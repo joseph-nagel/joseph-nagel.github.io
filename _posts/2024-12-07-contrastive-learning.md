@@ -3,7 +3,7 @@ layout: post
 title: Contrastive learning
 mathjax: true
 tags: [Introduction, Contrastive learning, Triplet loss]
-thumbnail-img: https://raw.githubusercontent.com/joseph-nagel/contrastive-learning/refs/heads/main/assets/mnist_embeddings.jpg
+thumbnail-img: https://raw.githubusercontent.com/joseph-nagel/contrastive-learning/main/assets/mnist_embeddings.jpg
 gh-repo: joseph-nagel/contrastive-learning
 gh-badge: [star, fork, follow]
 ---
