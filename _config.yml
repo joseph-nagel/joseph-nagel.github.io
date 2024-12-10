@@ -47,6 +47,7 @@ navbar-links:
   Home: /
   # Blog: /blog/
   ML Intros:
+    - GP models: /2024/12/10/gp.html
     - Physics-informed neural nets: /2024/12/09/pinn.html
     - Attention mechanism: /2024/12/08/attention.html
     - Contrastive learning: /2024/12/07/contrastive-learning.html
