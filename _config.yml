@@ -20,6 +20,7 @@ navbar-links:
   Home: /
   # Blog: /blog/
   ML Intros:
+    - Diffusion models: /2024/12/12/ddpm.html
     - VAE: /2024/12/11/vae.html
     - GP models: /2024/12/10/gp.html
     - Physics-informed neural nets: /2024/12/09/pinn.html
