@@ -50,7 +50,7 @@ navbar-links:
     - VAE: /2024/12/11/vae.html
     - GP models: /2024/12/10/gp.html
     - Physics-informed neural nets: /2024/12/09/pinn.html
-    - Attention mechanism: /2024/12/08/attention.html
+    - Attention: /2024/12/08/attention.html
     - Contrastive learning: /2024/12/07/contrastive-learning.html
     - Adversarial ML: /2024/12/06/adversarial-ml.html
   ML Projects: /projects/
