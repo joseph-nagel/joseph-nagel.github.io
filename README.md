@@ -31,8 +31,3 @@ This is the repository of my personal website made with [GitHub Pages](https://d
     bundle update
     ```
 
-- Convert Jupyter notebook to Markdown:
-    ```
-    jupyter nbconvert --to markdown intro.ipynb
-    ```
-
