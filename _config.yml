@@ -19,7 +19,7 @@ description: This website contains projects related to machine learning, neural 
 navbar-links:
   Home: /
   # Blog: /blog/
-  ML Intros:
+  ML intros:
     - Diffusion models: /2024/12/12/ddpm.html
     - VAE: /2024/12/11/vae.html
     - GP models: /2024/12/10/gp.html
@@ -27,8 +27,9 @@ navbar-links:
     - Attention: /2024/12/08/attention.html
     - Contrastive learning: /2024/12/07/contrastive-learning.html
     - Adversarial ML: /2024/12/06/adversarial-ml.html
-  ML Projects: /projects/
-  # About Me: /about/
+  ML projects: /projects/
+  # About me: /about/
+  Publications: /publications/
 
 # Timezone
 timezone: Europe/Berlin
