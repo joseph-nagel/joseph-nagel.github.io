@@ -20,6 +20,7 @@ navbar-links:
   Home: /
   Blog: /blog/
   ML intros:
+    - Tabular foundation models: /2026/07/01/pfn.html
     - Boltzmann machines: /2025/11/07/rbm.html
     # - Energy-based models: /2025/10/28/boltzmann.html
     - Diffusion models: /2024/12/12/ddpm.html
@@ -27,7 +28,6 @@ navbar-links:
     - GP models: /2024/12/10/gp.html
     - Physics-informed neural nets: /2024/12/09/pinn.html
     - Attention: /2024/12/08/attention.html
-    - Tabular foundation models: /2026/07/01/pfn.html
     - Contrastive learning: /2024/12/07/contrastive-learning.html
     - Adversarial ML: /2024/12/06/adversarial-ml.html
   ML projects: /projects/
