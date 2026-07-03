@@ -4,7 +4,6 @@ title: "GeoPandas"
 mathjax: true
 tags: ["GeoPandas", "Geospatial data analysis"]
 thumbnail-img: https://raw.githubusercontent.com/joseph-nagel/ml-notebooks/main/assets/europe_map.svg
-date: 2026-03-14
 ---
 
 I've recently started exploring [GeoPandas](https://geopandas.org/en/stable/), a great Python library for working with geospatial data. It combines the convenience of `pandas` for handling tabular data with the capabilities of `shapely` to perform geometric operations.
