@@ -9,7 +9,7 @@ Most of the provided models are implemented in PyTorch.
 Where needed, Lightning is used for model training.
 
 - [diffusion-demo](https://github.com/joseph-nagel/diffusion-demo): Generative diffusion models
-- [vae-intro](https://github.com/joseph-nagel/vae-intro): Variational autoencoders
+- [variational-autoencoder](https://github.com/joseph-nagel/variational-autoencoder): Variational autoencoders
 - [vartorch](https://github.com/joseph-nagel/vartorch): Bayesian neural networks
 - [gaussian-processes](https://github.com/joseph-nagel/gaussian-processes): Gaussian process modeling
 - [physics-informed-nn](https://github.com/joseph-nagel/physics-informed-nn): Physics-informed neural nets
