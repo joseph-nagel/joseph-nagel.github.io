@@ -1,7 +1,6 @@
 # Personal website
 
-This is the repository of my personal website made with [GitHub Pages](https://docs.github.com/en/pages),
-[Jekyll](https://jekyllrb.com/) and [Beautiful Jekyll](https://beautifuljekyll.com/).
+This is the repository of my personal website made with [GitHub Pages](https://docs.github.com/en/pages), [Jekyll](https://jekyllrb.com/) and [Beautiful Jekyll](https://beautifuljekyll.com/).
 
 
 ## Instructions
