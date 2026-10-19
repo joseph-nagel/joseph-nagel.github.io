@@ -20,6 +20,7 @@ navbar-links:
   Home: /
   Blog: /blog/
   ML intros:
+    - Self-supervised learning: /2026/10/20/ssl.html
     - Conformal prediction: /2026/08/30/conformal-prediction.html
     - Tabular foundation models: /2026/07/01/pfn.html
     - Boltzmann machines: /2025/11/07/rbm.html
