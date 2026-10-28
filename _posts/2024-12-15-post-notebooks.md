@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to post notebooks with Beautiful Jekyll?
+title: How to post notebooks (with Beautiful Jekyll)?
 math: true
 categories: [Blogging]
 tags: [jekyll, jupyter]

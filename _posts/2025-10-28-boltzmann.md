@@ -2,6 +2,7 @@
 layout: post
 title: Boltzmann & ML
 math: true
+categories: [Machine learning]
 tags: [physics, boltzmann, generative modeling, ebm]
 ---
 

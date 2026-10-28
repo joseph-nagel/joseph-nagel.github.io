@@ -1,6 +1,7 @@
 ---
 layout: post
 title: GeoPandas
+categories: [Data analysis]
 tags: [geopandas, geospatial data analysis, python]
 image: https://raw.githubusercontent.com/joseph-nagel/ml-notebooks/main/assets/europe_map.svg
 ---
