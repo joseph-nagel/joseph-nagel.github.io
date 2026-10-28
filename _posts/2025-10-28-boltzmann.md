@@ -31,7 +31,7 @@ $$
 p_i = \operatorname{Softmax}(\boldsymbol{z})_i = \frac{\exp(z_i)}{\sum_{j=1}^M \exp(z_j)}.
 $$
 
-This represents a soft version of the argmax. Since the softmax is smooth and differentiable, it establishes a convenient activation function. Beyond multi-output classifiers, it is found in the attention mechanism of the transformer architecture (see [this post](/2024/12/08/attention.html)).
+This represents a soft version of the argmax. Since the softmax is smooth and differentiable, it establishes a convenient activation function. Beyond multi-output classifiers, it is found in the attention mechanism of the transformer architecture (see [this post]({% post_url 2024-12-08-attention %})).
 
 One can easily see that the Boltzmann distribution can be written in terms of the softmax function as $$(p_1, \ldots, p_M) = \operatorname{Softmax}(-\epsilon_1 / T, \ldots, -\epsilon_M / T)$$. Here, $$z_i = -\epsilon_i / T$$ are interpreted as the logits.
 
@@ -111,5 +111,5 @@ Note that the factor $$Z_{\boldsymbol{\theta}}$$ has canceled out. Moreover, the
 Beyond the above, one can of course find more physical concepts in deep learning. See [[Mehta et al., 2019](https://doi.org/10.1016/j.physrep.2019.03.001); [Bahri et al., 2020](https://doi.org/10.1146/annurev-conmatphys-031119-050745); [Decelle, 2023](https://doi.org/10.1016/j.physa.2022.128154)] for review papers from a physics perspective. We conclude with a non-exhaustive list of relevant topics:
 - Bayesian statistics, MCMC sampling and variational inference [[Faulkner and Livingstone, 2022](https://arxiv.org/abs/2208.04751); [Grant et al., 2024](https://doi.org/10.1088/1742-5468/ad3350)]
 - Symmetries in CNN architectures [[Cohen and Welling, 2016](https://arxiv.org/abs/1602.07576); [Cheng et al., 2019](https://arxiv.org/abs/1906.02481)]
-- Physics-informed ML [[Karniadakis et al., 2021](https://doi.org/10.1038/s42254-021-00314-5); [Blechschmidt and Ernst, 2021](https://doi.org/10.1002/gamm.202100006); [Cuomo et al., 2022](https://doi.org/10.1007/s10915-022-01939-z)] (see also [this post](/2024/12/09/pinn.html))
+- Physics-informed ML [[Karniadakis et al., 2021](https://doi.org/10.1038/s42254-021-00314-5); [Blechschmidt and Ernst, 2021](https://doi.org/10.1002/gamm.202100006); [Cuomo et al., 2022](https://doi.org/10.1007/s10915-022-01939-z)] (see also [this post]({% post_url 2024-12-09-pinn %}))
 - Dynamical systems and control theory perspective of neural nets [[E et al., 2017](https://doi.org/10.1007/s40304-017-0103-z); [Chen et al., 2018](https://arxiv.org/abs/1806.07366); [Benning et al., 2019](https://arxiv.org/abs/1904.05657); [Li et al., 2023](https://doi.org/10.4171/jems/1221)]
