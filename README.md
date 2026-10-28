@@ -1,39 +1,56 @@
-# Chirpy Starter
+# Personal website
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+This is the repository of my personal website and blog made with [GitHub Pages](https://docs.github.com/en/pages), [Jekyll](https://jekyllrb.com/) and the [Chirpy theme](https://chirpy.cotes.page).
 
-A minimal, ready-to-use template for creating a blog with the [**Chirpy**][chirpy] Jekyll theme. Get up and running in minutes with all critical files pre-configured.
 
-## Why This Starter Exists
+## Instructions
 
-When installing Chirpy through [RubyGems.org][gem], Jekyll can only read a subset of theme files (`_data`, `_layouts`, `_includes`, `_sass`, `assets`) and limited `_config.yml` options from the gem. As a result, users cannot enjoy the full out-of-the-box experience that Chirpy offers.
+- Follow the instructions from [Chirpy's getting-started guide](https://chirpy.cotes.page/posts/getting-started/)
 
-To unlock all features, the following files must be present in your Jekyll site:
+- Edit [`_config.yml`](_config.yml) and, if needed, [`contact.yml`](_data/contact.yml) and [`share.yml`](_data/share.yml)
 
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
-```
+- Further customize the [Chirpy theme](https://github.com/cotes2020/jekyll-theme-chirpy):
+    - Copy [`_layouts/post.html`](_layouts/post.html) from the theme and comment out the preview image at the top of the post
+    - Copy [`assets/css/jekyll-theme-chirpy.scss`](assets/css/jekyll-theme-chirpy.scss) add modifications for square preview images
 
-This starter bundles those files from the latest **Chirpy** release along with a [CD][CD] workflow, so you can start writing immediately.
 
-## Usage
+## Other helpful stuff
 
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
+- Install requirements (on Fedora Linux):
+    ```bash
+    sudo dnf install ruby ruby-devel openssl-devel redhat-rpm-config gcc-c++ @development-tools
+    ```
 
-## Contributing
+- Install Jekyll:
+    ```
+    gem install jekyll bundler
+    ```
 
-This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
+- Create new site in existing directory:
+    ```bash
+    jekyll new . --force
+    ```
 
-## License
+- Preview locally:
+    ```bash
+    bundle exec jekyll serve --livereload
+    ```
 
-This work is published under [MIT][mit] License.
+- Update gems from `Gemfile`:
+    ```bash
+    bundle update
+    ```
 
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+<!-- - Create `favicon.ico` from `Photo.jpg`:
+    ```bash
+    magick assets/images/Photo.jpg -define icon:auto-resize=16,32,48,64 -flatten -colors 256 favicon.ico
+    ``` -->
+
+<!-- - Use a specific Ruby version:
+    ```
+    sudo dnf install rbenv
+    rbenv install 3.1.7
+    rbenv global 3.1.7
+    eval "$(rbenv init -)"
+    gem install bundler -v 2.3.27
+    ``` -->
