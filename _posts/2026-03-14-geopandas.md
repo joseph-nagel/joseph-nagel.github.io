@@ -10,7 +10,9 @@ I've recently started exploring [GeoPandas](https://geopandas.org/en/stable/), a
 
 While GeoPandas certainly supports many types of advanced geospatial analysis, I would especially like to highlight its ability to create nice-looking map-based visualizations. A map of Europe created in [this notebook](https://github.com/joseph-nagel/ml-notebooks/blob/main/notebooks/geospatial_data.ipynb) is shown here as an example:
 
-<img src="https://raw.githubusercontent.com/joseph-nagel/ml-notebooks/main/assets/europe_map.svg" alt="A map of Europe created with GeoPandas" title="GeoPandas Europe map" height="400" style="display:block; margin:0 auto;">
+<!-- <img src="https://raw.githubusercontent.com/joseph-nagel/ml-notebooks/main/assets/europe_map.svg" alt="A map of Europe created with GeoPandas" title="GeoPandas Europe map" width="350" style="display:block; margin:0 auto;"> -->
+![A map of Europe created with GeoPandas](https://raw.githubusercontent.com/joseph-nagel/ml-notebooks/main/assets/europe_map.svg){: style="background-color: white" width="350" }
+_GeoPandas Europe map_
 
 The remainder of this post provides a brief introduction to some of the core concepts of GeoPandas. More details can be found in the [official documentation](https://geopandas.org/en/stable/docs.html).
 
@@ -19,7 +21,9 @@ The remainder of this post provides a brief introduction to some of the core con
 
 The main `geopandas` objects are `geopandas.GeoDataFrame` and `geopandas.GeoSeries`. They are subclasses of `pandas.DataFrame` and `pandas.Series`, respectively, and extend their functionality to include geometric data. The following figure from the [getting started guide](https://geopandas.org/en/stable/getting_started/introduction.html) illustrates a `GeoDataFrame` containing multiple attribute columns and a `GeoSeries` as a dedicated geometry column:
 
-<img src="https://geopandas.org/en/stable/_images/dataframe.svg" alt="A GeoDataFrame with multiple attribute columns and a dedicated geometry column" title="GeoDataFrame" height="300" style="background-color: white;">
+<!-- <img src="https://geopandas.org/en/stable/_images/dataframe.svg" alt="A GeoDataFrame with multiple attribute columns and a dedicated geometry column" title="GeoDataFrame" width="500" style="background-color: white;"> -->
+![A GeoDataFrame with multiple attribute columns and a dedicated geometry column](https://geopandas.org/en/stable/_images/dataframe.svg){: style="background-color: white" width="500" }
+_GeoDataFrame_
 
 Each row represents a certain geographic feature, such as a point, line, or polygon, along with its associated attributes. A `GeoDataFrame` may contain multiple `GeoSeries` columns with geometries, but only one of them can be set as the **active geometry**. By default, it is used for all geometric manipulations and visualizations.
 

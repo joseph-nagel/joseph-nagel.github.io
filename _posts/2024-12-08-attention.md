@@ -17,7 +17,7 @@ Attention has been developed in language processing [[Bahdanau et al., 2015](htt
 We start with a very short discussion of the equation and interpretation of the **scaled dot-product attention** in [[Vaswani et al., 2017](https://arxiv.org/abs/1706.03762)]. Adopting the convention that the main objects are row vectors organized in matrices, this influential attention variant is usually written as
 
 $$
-\operatorname{Attention}(\boldsymbol{Q}, \boldsymbol{K}, \boldsymbol{\boldsymbol{V}}) =
+\operatorname{Attention}(\boldsymbol{Q}, \boldsymbol{K}, \boldsymbol{V}) =
 \operatorname{Softmax} \left( \frac{\boldsymbol{Q} \boldsymbol{K}^\top}{\sqrt{d_k}} \right) \boldsymbol{V}.
 $$
 
@@ -71,7 +71,7 @@ w_{m1} & w_{m2} & \ldots & w_{mn} \\
 \end{pmatrix}.
 $$
 
-The matrix $$d_k^{-1/2} \boldsymbol{Q} \boldsymbol{K}^\top$$ is sometimes referred to as **alignment scores**, while $$\boldsymbol{W}$$ is called the **attention weights**. In each row $$i \in \{1,\ldots,m\}$$ one has that the weights sum to one $$\sum_{j=1}^n w_{ij} = 1$$. Hence, $$\operatorname{Attention}(\boldsymbol{Q}, \boldsymbol{K}, \boldsymbol{\boldsymbol{V}}) \in \mathbb{R}^{m \times d_v}$$ can be seen as a relevance-weighted average of the values.
+The matrix $$d_k^{-1/2} \boldsymbol{Q} \boldsymbol{K}^\top$$ is sometimes referred to as **alignment scores**, while $$\boldsymbol{W}$$ is called the **attention weights**. In each row $$i \in \{1,\ldots,m\}$$ one has that the weights sum to one $$\sum_{j=1}^n w_{ij} = 1$$. Hence, $$\operatorname{Attention}(\boldsymbol{Q}, \boldsymbol{K}, \boldsymbol{V}) \in \mathbb{R}^{m \times d_v}$$ can be seen as a relevance-weighted average of the values.
 
 Let us further investigate a single row $$(w_{i1}, \ldots, w_{in})$$ of the attention weight matrix. It describes how the query vector $$\boldsymbol{q}_i$$ is matched against (or attends to) all possible keys $$\boldsymbol{k}_j$$ with $$j=1,\ldots,n$$. This highlights the analogy to information retrieval. The row vector of attention weights is given as
 
@@ -100,7 +100,7 @@ When queries, keys, and values are computed for a single sequence, say its $$m$$
 
 ## Cross-attention
 
-More generally, one may also connect items from two different sequences though. This is called **cross-attention**. The queries $$\boldsymbol{Q} = \boldsymbol{X} \boldsymbol{W}_q$$ are given as before. The sequence $$\boldsymbol{X} \in \mathbb{R}^{m \times d_x}$$ and weight matrix $$\boldsymbol{W}_q \in \mathbb{R}^{d_x \times d_k}$$ are unchanged. Another sequence $$\boldsymbol{Y} \in \mathbb{R}^{n \times d_y}$$ is used in order to compute the keys $$\boldsymbol{K} = \boldsymbol{Y} \boldsymbol{W}_k$$ and values $$\boldsymbol{V} = \boldsymbol{Y} \boldsymbol{W}_v$$. Here, the weight matrices $$\boldsymbol{W}_k \in \mathbb{R}^{d_y \times d_k}$$ and $$\boldsymbol{W}_v \in \mathbb{R}^{d_y \times d_v}$$ are correspondingly shaped.
+More generally, one may also connect items from two different sequences too. This is called **cross-attention**. The queries $$\boldsymbol{Q} = \boldsymbol{X} \boldsymbol{W}_q$$ are given as before. The sequence $$\boldsymbol{X} \in \mathbb{R}^{m \times d_x}$$ and weight matrix $$\boldsymbol{W}_q \in \mathbb{R}^{d_x \times d_k}$$ are unchanged. Another sequence $$\boldsymbol{Y} \in \mathbb{R}^{n \times d_y}$$ is used in order to compute the keys $$\boldsymbol{K} = \boldsymbol{Y} \boldsymbol{W}_k$$ and values $$\boldsymbol{V} = \boldsymbol{Y} \boldsymbol{W}_v$$. Here, the weight matrices $$\boldsymbol{W}_k \in \mathbb{R}^{d_y \times d_k}$$ and $$\boldsymbol{W}_v \in \mathbb{R}^{d_y \times d_v}$$ are correspondingly shaped.
 
 <!-- <img src="https://raw.githubusercontent.com/joseph-nagel/attention-mechanism/main/assets/attention.svg" alt="The scaled dot-product (cross) attention mechanism is visualized" title="Scaled dot-product (cross) attention" width="600"> -->
 ![The scaled dot-product (cross) attention mechanism is visualized](https://raw.githubusercontent.com/joseph-nagel/attention-mechanism/main/assets/attention.svg){: width="600" }

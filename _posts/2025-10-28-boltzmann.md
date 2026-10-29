@@ -52,7 +52,7 @@ Because exponentiation and normalization already ensure the validity of the dist
 
 Training EBMs requires specialized methods because the likelihood cannot be directly evaluated. Maximum likelihood estimation is enabled by simulating gradients via **Markov chain Monte Carlo** (MCMC) sampling.
 
-Given a set of points $$\{\boldsymbol{x}_i, \ldots, \boldsymbol{x}_N\}$$ that were independently drawn from the true data distribution $$\boldsymbol{x}_i \sim p(\cdot)$$, the log-likelihood (as a function of the parameters $$\boldsymbol{\theta}$$) is given as $$\log q_{\boldsymbol{\theta}}(\boldsymbol{x}_1, \ldots, \boldsymbol{x}_N) = \frac{1}{N} \sum_{i=1}^N \log q_{\boldsymbol{\theta}}(\boldsymbol{x}_i)$$.
+Given a set of points $$\{\boldsymbol{x}_1, \ldots, \boldsymbol{x}_N\}$$ that were independently drawn from the true data distribution $$\boldsymbol{x}_i \sim p(\cdot)$$, the log-likelihood (as a function of the parameters $$\boldsymbol{\theta}$$) is given as $$\log q_{\boldsymbol{\theta}}(\boldsymbol{x}_1, \ldots, \boldsymbol{x}_N) = \sum_{i=1}^N \log q_{\boldsymbol{\theta}}(\boldsymbol{x}_i)$$.
 
 Maximizing the log-likelihood is the empirical equivalent of minimizing the expectation $$\mathbb{E}_p[- \log q_{\boldsymbol{\theta}}(\cdot)] = \mathbb{E}_p[E_{\boldsymbol{\theta}}(\cdot)] + \log Z_{\boldsymbol{\theta}}$$. One can derive for the gradients
 

@@ -12,7 +12,7 @@ The existence of adversarial examples for neural networks has been first observe
 
 ## Adversarial attacks
 
-We consider image classification as a prototypical problem for the occurrence of adversarial inputs. Given a dataset $$\{(\boldsymbol{x}_i, y_i)\}_{i=1}^N$$ of images $$\boldsymbol{x}_i$$ and labels $$y_i$$. The weights $$\boldsymbol{\theta}$$ of a neural network $$\mathcal{M}_{\boldsymbol{\theta}}(\boldsymbol{x})$$ can be found by minimizing a loss function:
+We consider image classification as a prototypical problem for the occurrence of adversarial inputs. Given a dataset $$\{(\boldsymbol{x}_i, y_i)\}_{i=1}^N$$ of images $$\boldsymbol{x}_i$$ and labels $$y_i$$, the weights $$\boldsymbol{\theta}$$ of a neural network $$\mathcal{M}_{\boldsymbol{\theta}}(\boldsymbol{x})$$ can be found by minimizing a loss function:
 
 $$
 \hat{\boldsymbol{\theta}} =
@@ -22,7 +22,7 @@ $$
 
 Here, $$L(\mathcal{M}_{\boldsymbol{\theta}}(\boldsymbol{x}), y)$$ is the contribution of a single data point $$(\boldsymbol{x}, y)$$.
 
-Given a trained classifier, one can try to (imperceptibly) perturb an input $$\boldsymbol{x}$$ such the altered image $$\tilde{\boldsymbol{x}} \in \mathcal{B}_p(\boldsymbol{x}, \epsilon)$$ is misclassified. A small $$\ell_p$$-ball $$\mathcal{B}_p(\boldsymbol{x}, \epsilon) = \{\boldsymbol{x}^\star \colon \lVert \boldsymbol{x}^\star -\boldsymbol{x} \rVert_p \leq \epsilon\}$$ with radius $$\epsilon > 0$$ is often used to constrain the image modification. This **adversarial attack** can be formulated as the constrained optimization problem of maximizing the loss:
+Given a trained classifier, one can try to (imperceptibly) perturb an input $$\boldsymbol{x}$$ such that the altered image $$\tilde{\boldsymbol{x}} \in \mathcal{B}_p(\boldsymbol{x}, \epsilon)$$ is misclassified. A small $$\ell_p$$-ball $$\mathcal{B}_p(\boldsymbol{x}, \epsilon) = \{\boldsymbol{x}^\star \colon \lVert \boldsymbol{x}^\star -\boldsymbol{x} \rVert_p \leq \epsilon\}$$ with radius $$\epsilon > 0$$ is often used to constrain the image modification. This **adversarial attack** can be formulated as the constrained optimization problem of maximizing the loss:
 
 $$
 \tilde{\boldsymbol{x}} =
@@ -50,7 +50,7 @@ $$
 \left( \nabla_{\boldsymbol{x}} L(\mathcal{M}_{\boldsymbol{\theta}}(\boldsymbol{x}), y) \right).
 $$
 
-This approach can be seen as a first-order order or single-step approximation of the untargeted $$\ell_{\infty}$$-norm attack with the constraint $$\lVert \tilde{\boldsymbol{x}} - \boldsymbol{x} \rVert_{\infty} \leq \epsilon$$. The corresponding targeted variant of the FGSM attack is simply $$\tilde{\boldsymbol{x}} = \boldsymbol{x} - \epsilon \cdot \operatorname{sign}(\nabla_{\boldsymbol{x}} L(\mathcal{M}_{\boldsymbol{\theta}}(\boldsymbol{x}), \tilde{y}))$$.
+This approach can be seen as a first-order or single-step approximation of the untargeted $$\ell_{\infty}$$-norm attack with the constraint $$\lVert \tilde{\boldsymbol{x}} - \boldsymbol{x} \rVert_{\infty} \leq \epsilon$$. The corresponding targeted variant of the FGSM attack is simply $$\tilde{\boldsymbol{x}} = \boldsymbol{x} - \epsilon \cdot \operatorname{sign}(\nabla_{\boldsymbol{x}} L(\mathcal{M}_{\boldsymbol{\theta}}(\boldsymbol{x}), \tilde{y}))$$.
 
 A straightforward multi-step procedure is the **projected gradient descent** (PGD) attack from [[Carlini and Wagner, 2017](https://doi.org/10.1109/SP.2017.49)]. Starting from $$\boldsymbol{x}$$, or from a random location from its $$\epsilon$$-neighborhood (any $$p$$-norm), it proceeds by iteratively performing a certain number of update steps
 
