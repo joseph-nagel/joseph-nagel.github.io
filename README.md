@@ -6,9 +6,7 @@ This is the repository of my personal website and blog made with [GitHub Pages](
 ## Instructions
 
 - Follow the instructions from [Chirpy's getting-started guide](https://chirpy.cotes.page/posts/getting-started/)
-
 - Edit [`_config.yml`](_config.yml) and, if needed, [`contact.yml`](_data/contact.yml) and [`share.yml`](_data/share.yml)
-
 - Further customize the [Chirpy theme](https://github.com/cotes2020/jekyll-theme-chirpy):
     - Copy [`_layouts/post.html`](_layouts/post.html) from the theme and comment out the preview image at the top of the post
     - Copy [`assets/css/jekyll-theme-chirpy.scss`](assets/css/jekyll-theme-chirpy.scss) add modifications for square preview images

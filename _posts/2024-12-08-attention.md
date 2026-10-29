@@ -102,8 +102,9 @@ When queries, keys, and values are computed for a single sequence, say its $$m$$
 
 More generally, one may also connect items from two different sequences though. This is called **cross-attention**. The queries $$\boldsymbol{Q} = \boldsymbol{X} \boldsymbol{W}_q$$ are given as before. The sequence $$\boldsymbol{X} \in \mathbb{R}^{m \times d_x}$$ and weight matrix $$\boldsymbol{W}_q \in \mathbb{R}^{d_x \times d_k}$$ are unchanged. Another sequence $$\boldsymbol{Y} \in \mathbb{R}^{n \times d_y}$$ is used in order to compute the keys $$\boldsymbol{K} = \boldsymbol{Y} \boldsymbol{W}_k$$ and values $$\boldsymbol{V} = \boldsymbol{Y} \boldsymbol{W}_v$$. Here, the weight matrices $$\boldsymbol{W}_k \in \mathbb{R}^{d_y \times d_k}$$ and $$\boldsymbol{W}_v \in \mathbb{R}^{d_y \times d_v}$$ are correspondingly shaped.
 
-<img src="https://raw.githubusercontent.com/joseph-nagel/attention-mechanism/main/assets/attention.svg" alt="The scaled dot-product (cross) attention mechanism is visualized" title="Scaled dot-product (cross) attention" height="250">
-
+<!-- <img src="https://raw.githubusercontent.com/joseph-nagel/attention-mechanism/main/assets/attention.svg" alt="The scaled dot-product (cross) attention mechanism is visualized" title="Scaled dot-product (cross) attention" width="600"> -->
+![The scaled dot-product (cross) attention mechanism is visualized](https://raw.githubusercontent.com/joseph-nagel/attention-mechanism/main/assets/attention.svg){: width="600" }
+_Scaled dot-product (cross) attention_
 
 ## Multi-head attention
 
@@ -134,7 +135,9 @@ $$
 
 This embedding is fixed by construction and is not learned from data. Of course, other embeddings may be used as well. A more general overview of position information in transformers is provided in [[Dufter et al., 2022](https://doi.org/10.1162/coli_a_00445)].
 
-<img src="https://raw.githubusercontent.com/joseph-nagel/attention-mechanism/main/assets/sinusoidal.svg" alt="Sinusoidal encoding of spatial positions or times" title="Sinusoidal encoding" height="250">
+<!-- <img src="https://raw.githubusercontent.com/joseph-nagel/attention-mechanism/main/assets/sinusoidal.svg" alt="Sinusoidal encoding of spatial positions or times" title="Sinusoidal encoding" width="600"> -->
+![Sinusoidal encoding of spatial positions or times](https://raw.githubusercontent.com/joseph-nagel/attention-mechanism/main/assets/sinusoidal.svg){: width="600" }
+_Sinusoidal encoding_
 
 
 ## Transformer
