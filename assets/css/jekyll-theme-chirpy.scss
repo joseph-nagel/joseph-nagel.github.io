@@ -1,0 +1,36 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* customize for square preview images */
+
+#post-list .preview-img img {
+  background-color: #ffffff;
+  object-fit: contain;
+  max-width: 300px;
+  max-height: 300px;
+  display: block;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  #post-list .post-preview > .col-md-5 {
+    flex: 1;
+  }
+
+  #post-list .post-preview > .col-md-7 {
+    flex: 3;
+  }
+}
