@@ -9,6 +9,21 @@ image: https://raw.githubusercontent.com/joseph-nagel/adversarial-ml/main/assets
 
 The existence of adversarial examples for neural networks has been first observed in the context of image classification [[Szegedy et al., 2014](https://arxiv.org/abs/1312.6199)]. There are many great review papers on adversarial attacks and corresponding defenses. For example, the following publications are open access: [[Ren et al., 2020](https://doi.org/10.1016/j.eng.2019.12.012); [Khamaiseh et al., 2022](https://doi.org/10.1109/ACCESS.2022.3208131); [Meyers et al., 2023](https://doi.org/10.1007/s10462-023-10521-4); [Liu et al., 2024](https://doi.org/10.1007/s10462-024-10841-z)].
 
+---
+
+<div style="display:flex; justify-content:center; gap:1rem; flex-wrap:wrap">
+  <div>
+    <a class="popup img-link" href="https://raw.githubusercontent.com/joseph-nagel/adversarial-ml/main/assets/original.png"><img src="https://raw.githubusercontent.com/joseph-nagel/adversarial-ml/main/assets/original.png" alt="The original image is correctly classified as a volcano" width="250"></a>
+    <em>Original image before the attack</em>
+  </div>
+  <div>
+    <a class="popup img-link" href="https://raw.githubusercontent.com/joseph-nagel/adversarial-ml/main/assets/attacked.png"><img src="https://raw.githubusercontent.com/joseph-nagel/adversarial-ml/main/assets/attacked.png" alt="The attacked image is misclassified as a goldfish" width="250"></a>
+    <em>Imperceptibly perturbed image</em>
+  </div>
+</div>
+
+---
+
 
 ## Adversarial attacks
 

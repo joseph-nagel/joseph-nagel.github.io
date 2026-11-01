@@ -1,6 +1,6 @@
 # Personal website
 
-This is the repository of my personal website and blog made with [GitHub Pages](https://docs.github.com/en/pages), [Jekyll](https://jekyllrb.com/) and the [Chirpy theme](https://chirpy.cotes.page).
+This is the repository of my blog made with [GitHub Pages](https://docs.github.com/en/pages), [Jekyll](https://jekyllrb.com/) and the [Chirpy theme](https://chirpy.cotes.page).
 
 
 ## Instructions

@@ -14,6 +14,25 @@ This blog post contains a brief introduction to **conformal prediction** (CP), a
 
 Our discussion here concentrates on the bare minimum of theoretical results and implementational aspects that is necessary in order to appreciate and apply CP. More exhaustive and rigorous overviews can be found in the references [[Tibshirani, 2023](https://www.stat.berkeley.edu/~ryantibs/statlearn-s23/lectures/conformal.pdf); [Da Veiga, 2024](https://hal.science/hal-04690218); [Angelopoulos et al., 2024](https://arxiv.org/abs/2411.11824); [Sesia and Favaro, 2026](https://arxiv.org/abs/2603.23923)].
 
+---
+
+<div style="display:flex; justify-content:center; gap:1rem; flex-wrap:wrap">
+  <div>
+    <a class="popup img-link" href="https://raw.githubusercontent.com/joseph-nagel/conformal-prediction/main/assets/classif_lac.jpg"><img src="https://raw.githubusercontent.com/joseph-nagel/conformal-prediction/main/assets/classif_lac.jpg" alt="LAC predictions sets are visualized for a 2D 3-way classification problem" width="200"></a>
+    <em>Split conformal classification (LAC)</em>
+  </div>
+  <div>
+    <a class="popup img-link" href="https://raw.githubusercontent.com/joseph-nagel/conformal-prediction/main/assets/classif_aps.jpg"><img src="https://raw.githubusercontent.com/joseph-nagel/conformal-prediction/main/assets/classif_aps.jpg" alt="APS predictions sets are visualized for a 2D 3-way classification problem" width="200"></a>
+    <em>Split conformal classification (APS)</em>
+  </div>
+  <div>
+    <a class="popup img-link" href="https://raw.githubusercontent.com/joseph-nagel/conformal-prediction/main/assets/reg_cqr.svg"><img src="https://raw.githubusercontent.com/joseph-nagel/conformal-prediction/main/assets/reg_cqr.svg" alt="CQR prediction intervals are shown for a 1D regression problem with heteroscedastic noise" width="300"></a>
+    <em>Conformalized quantile regression</em>
+  </div>
+</div>
+
+---
+
 
 ## Prediction sets
 
