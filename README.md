@@ -31,7 +31,7 @@ This is the repository of my blog made with [GitHub Pages](https://docs.github.c
 
 - Preview locally:
     ```bash
-    bundle exec jekyll serve --livereload
+    bundle exec jekyll serve --livereload --future
     ```
 
 - Update gems from `Gemfile`:
